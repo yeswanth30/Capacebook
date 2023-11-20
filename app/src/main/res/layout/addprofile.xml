@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_capacebook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DuplicateIds,InvalidId">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="1"
+                android:text="Add your Profile"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/layout1"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FFA500"
+                android:text="SELECT IMAGE for your profile"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <!--ImageView to preview the selected image-->
+            <ImageView
+                android:id="@+id/IVPreviewImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/BSelectImage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/layout2"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:hint="Something about yourself (Bio)"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/layout3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Female"/>
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Other"/>
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/gender"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:hint="Enter Age "
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layout4"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

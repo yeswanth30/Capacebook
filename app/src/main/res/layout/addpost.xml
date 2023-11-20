@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_capacebook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DuplicateIds,InvalidId">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Add your First Post"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/layout1"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/caption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:hint="Caption/Title "
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/layout2"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BSelectPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#00A36C"
+                android:text="SELECT PHOTO / VIDEO"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <!--ImageView to preview the selected image-->
+            <ImageView
+                android:id="@+id/IVPreviewPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/BSelectImage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layout3"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF0000"
+                android:textColor="@color/white"
+                android:text="Create Post" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/layout4"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip / remind me later " />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

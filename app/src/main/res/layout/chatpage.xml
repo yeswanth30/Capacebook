@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_capacebook"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DuplicateIds,InvalidId">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:id="@+id/recyclerView6"
+         android:layout_height="300dp" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/recyclerView6"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Enter Message"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/messagetext"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Send"
+                    android:id="@+id/sendbutton"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:id="@+id/reciever"
+        android:layout_width="250dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Reciever" />
+
+    <EditText
+        android:id="@+id/sender"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:hint="Sender" />
+
+</LinearLayout>
